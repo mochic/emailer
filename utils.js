@@ -7,8 +7,8 @@ let mailerConfig;
 if (process.env.NODE_ENV === 'production') {
   mailerConfig = mg({
     auth: {
-      api_key: process.env.EMAILER_MAILGUN_API_KEY,
-      domain: process.env.EMAILER_MAILGUN_DOMAIN,
+      api_key: process.env.MAILGUN_API_KEY,
+      domain: process.env.MAILGUN_DOMAIN,
     },
   });
 } else {
@@ -29,7 +29,7 @@ const sendEmail = (recipient, message) =>
   new Promise((resolve, reject) =>
     transport.sendMail(
       {
-        from: process.env.EMAILER_SENDER_ADDRESS,
+        from: process.env.SENDER_ADDRESS,
         to: recipient,
         subject: message.subject,
         text: message.text,
