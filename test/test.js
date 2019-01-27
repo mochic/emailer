@@ -17,6 +17,7 @@ describe('emailer integration tests', () => {
           recipient: testRecipient,
         })
         .set('Accept', 'application/json')
+        .set('Content-Type', 'application/json')
         .expect('Content-Type', /json/)
         .expect(res => {
           res.body.id = 'test';
