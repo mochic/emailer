@@ -1,6 +1,6 @@
 # so i dont forget
 
-important/sensitive environment variables for production are to be set in the aws web console thing. they are:
+important/sensitive environment variables for production are to be set in the eb cli thing. they are:
 
 - `PORT`
 - `NODE_ENV`
@@ -15,3 +15,7 @@ important/sensitive environment variables for production are to be set in the aw
 
 - `ETHEREAL_MAIL_USERNAME`
 - `ETHEREAL_MAIL_PASSWORD`
+
+## todo
+
+- figure out how to use the aws eb webconsole thing
