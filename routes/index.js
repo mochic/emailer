@@ -1,6 +1,7 @@
 'use strict';
 const express = require('express');
 const { sendEmail } = require('../utils');
+const debug = require('debug')('emailer:routes:index');
 
 const router = express.Router();
 
@@ -17,6 +18,7 @@ router.post('/', async (req, res, next) => {
     });
     await next();
   } catch (e) {
+    debug(e); // console log error in debug
     await next(e);
   }
 });

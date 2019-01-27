@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "DEBUG=emailer:* node ./bin/www",
     "start-dev": "nodemon ./bin/www",
     "test": "snyk test && mocha --timeout 15000"
   },
