@@ -4,6 +4,7 @@ const mg = require('nodemailer-mailgun-transport');
 
 // based off of: https://medium.com/@sgobinda007/send-email-from-your-node-js-application-by-using-mailgun-api-services-bbedc7c45c19
 let mailerConfig;
+/* istanbul ignore if */
 if (process.env.NODE_ENV === 'production') {
   mailerConfig = mg({
     auth: {

@@ -5,7 +5,7 @@
   "scripts": {
     "start": "DEBUG=emailer:* nodemon ./bin/www",
     "start-prod": "node ./bin/www",
-    "test": "snyk test && mocha --timeout 15000"
+    "test": "snyk test && nyc mocha --timeout 15000"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
@@ -22,6 +22,7 @@
   "devDependencies": {
     "mocha": "^5.2.0",
     "nodemon": "^1.18.9",
+    "nyc": "^13.1.0",
     "snyk": "^1.122.3",
     "supertest": "^3.4.2"
   }
