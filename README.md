@@ -1,9 +1,35 @@
 # so i dont forget
 
-add an new service recipient:
+## add an new service recipient
 
-- add email recipient via "Authorized Recipients" through mailgun
+- add email recipient via "Authorized Recipients" through mailgun website
 
-deploy to elasticbeanstalk:
+## local development
 
-- eb deploy
+### host
+
+```
+$ npm start
+```
+
+### testing
+
+```
+$ npm test
+```
+
+## setup elastic beanstalk
+
+```
+$ eb init
+```
+
+```
+$ eb create
+```
+
+## update elastic beanstalk
+
+```
+$ eb deploy
+```
