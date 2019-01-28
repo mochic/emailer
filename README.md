@@ -33,3 +33,7 @@ $ eb create
 ```
 $ eb deploy
 ```
+
+## notes
+
+- endpoint port 80 forwards to the application at 8081
